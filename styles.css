@@ -12,42 +12,26 @@
   --bs-gutter-x: 0 !important;
 
 }
-
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
 :root {
   --background-color: #a0a0a0fd;
+  --background-color-clair: #B4B4B4;
   /* Couleur de fond par défaut */
   --text-color: #000;
   /* Couleur du texte par défaut */
   --ombrage-color: rgb(255, 255, 0);
 
 }
-
-
 .dark-mode {
-  --background-color: #262424;
-  /* Couleur de fond pour le mode sombre */
+  --background-color: #242424;
+  --background-color-clair: #383838;
   --text-color: #ffffff;
   /* Couleur du texte pour le mode sombre */
   --ombrage-color: rgb(255, 255, 0);
 }
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-h3 {
-  font-size: 3em;
-  font-weight: bold;
-  text-transform: uppercase;
-  filter: drop-shadow(20px 20px 50px var(--ombrage-color));
-}
-
-
-.titre-h3 {
-  filter: drop-shadow(20px 20px 50px var(--text-color));
-}
-
 
 .toggle-button {
   padding: 10px 20px;
@@ -69,9 +53,24 @@ h3 {
 
 .toggle-button.dark-mode {
   background-color: rgb(255, 255, 0);
- 
-  
 }
+
+
+
+
+h3 {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  filter: drop-shadow(20px 20px 50px var(--ombrage-color));
+}
+
+
+.titre-h3 {
+  filter: drop-shadow(20px 20px 50px var(--text-color));
+}
+
+
 
 .competences {
   height: 40rem;
@@ -119,14 +118,10 @@ h3 {
 
 #section-top {
   height: 100vh;
-
+  background-color: #B4B4B4;
 }
 
 
-#projets {
-  width: auto;
-
-}
 
 #sec-projets{
   margin:150px ;
@@ -143,6 +138,10 @@ h3 {
   text-align: center;
 }
 
+.img-avatar {
+  width: 100%;
+}
+
 
 hr{
   color:rgb(255, 255, 0);
@@ -156,4 +155,15 @@ hr{
 
 .lol{
   height: 100vh;
+}
+
+#projets{
+  background-color: var(--background-color-clair);
+}
+
+
+@media screen and (min-width: 769px) {
+  #projets img {
+    height: 300px;
+  }
 }

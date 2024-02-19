@@ -21,21 +21,6 @@ document.getElementById('scrollToTop').addEventListener('click', function() {
 });
 
 
-const button = document.getElementById('bouton-card');
-
-button.addEventListener('mouseenter', function() {
-  button.style.backgroundColor = '#06250e';
-  button.style.color = '#fff';
-});
-
-button.addEventListener('mouseleave', function() {
-  button.style.backgroundColor = '#3498db';
-  button.style.color = '#fff';
-});
-
-
-
-
 // image sous la nav
 
 
