@@ -155,6 +155,5 @@ hr{
 }
 
 .lol{
-  /* width: 100vmin; */
-  aspect-ratio: 2/1;
+  height: 100vh;
 }
