@@ -10,24 +10,25 @@
 
 .row {
   --bs-gutter-x: 0 !important;
+
 }
 
 :root {
-  --background-color: #fff;
+  --background-color: #a0a0a0fd;
   /* Couleur de fond par défaut */
   --text-color: #000;
   /* Couleur du texte par défaut */
-  --ombrage-color: bisque;
+  --ombrage-color: rgb(255, 255, 0);
 
 }
 
 
 .dark-mode {
-  --background-color: #06250e;
+  --background-color: #262424;
   /* Couleur de fond pour le mode sombre */
-  --text-color: #fff;
+  --text-color: #ffffff;
   /* Couleur du texte pour le mode sombre */
-  --ombrage-color: rgb(2, 67, 45);
+  --ombrage-color: rgb(255, 255, 0);
 }
 
 body {
@@ -36,13 +37,12 @@ body {
 }
 
 h3 {
-
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
   filter: drop-shadow(20px 20px 50px var(--ombrage-color));
 }
 
-.avatar {
-  filter: drop-shadow(20px 20px 50px var(--ombrage-color));
-}
 
 .titre-h3 {
   filter: drop-shadow(20px 20px 50px var(--text-color));
@@ -63,41 +63,20 @@ h3 {
 }
 
 .toggle-button:hover {
-  background-color: #06250e;
-  color: #fff;
+  background-color: rgb(255, 255, 0);
+  color: #000000;
 }
 
 .toggle-button.dark-mode {
-  background-color: #06250e;
-  color: #fff;
-  border-color: #fff;
-}
-
-
-.nav-button:hover {
+  background-color: rgb(255, 255, 0);
+ 
   
-  color: #fff;
-  border-radius: 30px;
-
-  background-color: #06250e;
-}
-
-
-.projets {
-  height: 60rem;
-  width: auto;
 }
 
 .competences {
   height: 40rem;
   width: auto;
   padding-top: 10rem;
-}
-
-.slide {
-  width: 50rem;
-  height: auto;
-
 }
 
 .scroll-to-top {
@@ -108,4 +87,74 @@ h3 {
   cursor: pointer;
   display: none;
 
+}
+
+
+
+#image-de-competence{
+  padding: 14rem;
+}
+#image-de-competence2{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#image-de-competence2 > img{
+  
+  height: 100px;
+  width: auto;
+}
+#image-de-competence3{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#image-de-competence3 > img{
+  height: 100px;
+  width: auto;
+}
+
+
+#icone-skill {
+  padding-top: 20rem;
+}
+
+#section-top {
+  height: 100vh;
+
+}
+
+
+#projets {
+  width: auto;
+
+}
+
+#sec-projets{
+  margin:150px ;
+}
+
+
+
+.text-sur-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  width: auto;
+  text-align: center;
+}
+
+
+hr{
+  color:rgb(255, 255, 0);
+  border-width: 20px;
+  margin: 150px;
+}
+
+#avatar{
+  filter: drop-shadow(20px 20px 50px var(--ombrage-color));
+}
+
+.lol{
+  /* width: 100vmin; */
+  aspect-ratio: 2/1;
 }
