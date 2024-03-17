@@ -1,82 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Poppins:wght@300;400;700;800&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Honk";
 
 }
 
-.row {
-  --bs-gutter-x: 0 !important;
-
-}
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-:root {
-  --background-color: #a0a0a0fd;
-  --background-color-clair: #B4B4B4;
-  /* Couleur de fond par défaut */
-  --text-color: #000;
-  /* Couleur du texte par défaut */
-  --ombrage-color: rgb(255, 255, 0);
-
-}
-.dark-mode {
-  --background-color: #242424;
-  --background-color-clair: #383838;
-  --text-color: #ffffff;
-  /* Couleur du texte pour le mode sombre */
-  --ombrage-color: rgb(255, 255, 0);
+body{
+  background-color: #61cfd7;
+  background-image: url(./img/nuageblabla.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-.toggle-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: transparent;
+#home {
+  background-image: url(img/bureau.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+#home .title {
+  font-size: 3em;
   color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-  border-radius: 30px;
-  border: 2px solid #fff;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  width: max-content;
+  margin-left: 100px;
 }
 
-.toggle-button:hover {
-  background-color: rgb(255, 255, 0);
-  color: #000000;
+#home .title_name {
+  font-size: 6em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 100px;
 }
 
-.toggle-button.dark-mode {
-  background-color: rgb(255, 255, 0);
+#home .title_name span {
+  font-weight: 900;
 }
 
+#home .title_subtext {
+  font-size: 4em;
+  color: #fff;
+  width: max-content;
+  margin-left: 100px;
+  
+}
 
-
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 h3 {
   font-size: 3em;
   font-weight: bold;
   text-transform: uppercase;
-  filter: drop-shadow(20px 20px 50px var(--ombrage-color));
 }
 
-
-.titre-h3 {
-  filter: drop-shadow(20px 20px 50px var(--text-color));
-}
-
-
-
-.competences {
-  height: 40rem;
-  width: auto;
-  padding-top: 10rem;
-}
 
 .scroll-to-top {
   position: fixed;
@@ -88,82 +76,68 @@ h3 {
 
 }
 
-
-
-#image-de-competence{
-  padding: 14rem;
-}
-#image-de-competence2{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-#image-de-competence2 > img{
-  
-  height: 100px;
+.competences {
+  height: 40rem;
   width: auto;
+
 }
+
+
+
 #image-de-competence3{
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
 }
 #image-de-competence3 > img{
   height: 100px;
   width: auto;
 }
 
-
-#icone-skill {
-  padding-top: 20rem;
-}
-
-#section-top {
+#image-presentation{
+  background-image: url(./img/presentation-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
-  background-color: #B4B4B4;
-}
-
-
-
-#sec-projets{
-  margin:150px ;
-}
-
-
-
-.text-sur-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -0%);
   width: auto;
-  text-align: center;
 }
 
-.img-avatar {
-  width: 100%;
+#fixedButton {
+  position: fixed;
+  left: 80px;
+  bottom: 80px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Masquer le bouton par défaut */
 }
 
-
-hr{
-  color:rgb(255, 255, 0);
-  border-width: 20px;
-  margin: 150px;
+#fixedButton.visible {
+  display: block; /* Afficher le bouton lorsqu'il est visible */
+}
+/* Styles pour les éléments avec la classe "card" */
+.card {
+  width: 300px; /* Largeur fixe de 300 pixels */
+  padding: 20px; /* Remplissage intérieur de 20 pixels */
+  border-radius: 20px; /* Coins arrondis avec un rayon de courbure de 20 pixels */
+  border: 5px solid; /* Bordure solide de 5 pixels */
+  border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1; /* Bordure avec un dégradé de couleurs allant de rouge à violet */
+  animation: pulse 1s infinite alternate; /* Application de l'animation nommée "pulse" pendant 1 seconde, en boucle et alternativement */
 }
 
-#avatar{
-  filter: drop-shadow(20px 20px 50px var(--ombrage-color));
-}
-
-.lol{
-  height: 100vh;
-}
-
-#projets{
-  background-color: var(--background-color-clair);
-}
-
-
-@media screen and (min-width: 769px) {
-  #projets img {
-    height: 300px;
+/* Définition de l'animation nommée "pulse" */
+@keyframes pulse {
+  /* À 0% de progression de l'animation, les éléments sont à leur taille normale */
+  0% {
+    transform: scale(1);
   }
+  /* À 100% de progression de l'animation, les éléments sont agrandis de 5% par rapport à leur taille normale */
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.card-projet{
+  width: 250px;
+  height: 250px;
 }
