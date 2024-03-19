@@ -10,7 +10,7 @@
 }
 
 body{
-  background-color: #61cfd7;
+ 
   background-image: url(./img/nuageblabla.jpg);
   background-position: center;
   background-size: cover;
@@ -23,6 +23,13 @@ body{
   min-height: 100vh;
   background-position: center;
   overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  /* Nouvelle disposition pour les petits écrans */
+  #home {
+    background-size: 100% 100%;
+  }
 }
 
 
@@ -93,12 +100,13 @@ h3 {
 }
 
 #image-presentation{
-  background-image: url(./img/presentation-removebg-preview.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: auto;
+ border-radius: 20%;
+  max-width: 100%;
+  height: 80vh;
+  position: center;
 }
+
+
 
 #fixedButton {
   position: fixed;
@@ -119,7 +127,6 @@ h3 {
 .card {
   width: 300px; /* Largeur fixe de 300 pixels */
   padding: 20px; /* Remplissage intérieur de 20 pixels */
-  border-radius: 20px; /* Coins arrondis avec un rayon de courbure de 20 pixels */
   border: 5px solid; /* Bordure solide de 5 pixels */
   border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1; /* Bordure avec un dégradé de couleurs allant de rouge à violet */
   animation: pulse 1s infinite alternate; /* Application de l'animation nommée "pulse" pendant 1 seconde, en boucle et alternativement */
@@ -141,3 +148,4 @@ h3 {
   width: 250px;
   height: 250px;
 }
+
